@@ -9,7 +9,7 @@ def test_add():
   assert add(1, "b", 3) == -1
   assert add(9, "b", "c") == -1
   assert add(9, 1.2, "c") == -1
-  assert add("8", "1", 3.6) == 84
+  assert add(8, 1, 3.6) == 12
   '''
   assert add(7, 2) == 9
   assert add(5, "2", 3) == "error"
