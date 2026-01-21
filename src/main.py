@@ -11,6 +11,7 @@ def is_numeric_flexible(value):
             return False
     return False
 
+# 範囲チェック
 def is_in_range(value):
   return 0 < value <= 10
 
