@@ -11,7 +11,7 @@ def is_numeric_flexible(value):
             return False
     return False
 
-def is_in_range(value)
+def is_in_range(value):
   return 0 < value <= 10
 
 def add(a, b, c=0):
