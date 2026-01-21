@@ -2,6 +2,15 @@ from src.main import add
 import pytest
 
 def test_add():
+  # a,b,cが数値型か
+  assert add("a", 2, 3) == -2
+  assert add("a", "b", 3) == -2
+  assert add("a", "b", "c") == -2
+  assert add(1, "b", 3) == -2
+  assert add(9, "b", "c") == -2
+  assert add(9, 1.2, "c") == -2
+
+  '''
   assert add(7, 2) == 9
   assert add(5, "2", 3) == "error"
   assert add("2", "8.2") == "error"
@@ -22,3 +31,4 @@ def test_add():
   assert add("4", "2.4", 1) == "error"
   assert add(None, 3, "5.1") == "error"
   assert add("b", 4, 5) == "error"
+  '''
