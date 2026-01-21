@@ -21,11 +21,11 @@ def add(a, b, c=0):
     return (-1)
   if not is_numeric(c):
     return (-1)
-  if not is_in_range(a)
+  if not is_in_range(a):
     return (-2)
-  if not is_in_range(b)
+  if not is_in_range(b):
     return (-2)
-  if not is_in_range(c)
+  if not is_in_range(c):
     return (-2)
   try:
     return int(a + b) + int(c)
