@@ -15,11 +15,11 @@ def is_in_range(value):
   return 0 < value <= 10
 
 def add(a, b, c=0):
-  if not is_numeric(a):
+  if not is_numeric_flexible(a):
     return (-1)
-  if not is_numeric(b):
+  if not is_numeric_flexible(b):
     return (-1)
-  if not is_numeric(c):
+  if not is_numeric_flexible(c):
     return (-1)
   if not is_in_range(a):
     return (-2)
