@@ -3,13 +3,13 @@ import pytest
 
 def test_add():
   # a,b,cが数値型か
-  assert add("a", 2, 3) == -2
-  assert add("a", "b", 3) == -2
-  assert add("a", "b", "c") == -2
-  assert add(1, "b", 3) == -2
-  assert add(9, "b", "c") == -2
-  assert add(9, 1.2, "c") == -2
-
+  assert add("a", 2, 3) == -1
+  assert add("a", "b", 3) == -1
+  assert add("a", "b", "c") == -1
+  assert add(1, "b", 3) == -1
+  assert add(9, "b", "c") == -1
+  assert add(9, 1.2, "c") == -1
+  assert add("8", "1", 3.6) == 84
   '''
   assert add(7, 2) == 9
   assert add(5, "2", 3) == "error"
